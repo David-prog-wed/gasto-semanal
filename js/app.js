@@ -201,7 +201,7 @@ function addExpense(e) {
   budget.newGasto(gasto);
 
   //? Mensaje de todo bien!
-  ui.printAlert("Gasto Agregado Correctamente");
+  ui.printAlert("Gasto Agregado ", "success");
 
   //? Imprimir los gastos
   const { gastos, remaining } = budget; //? destructuring
