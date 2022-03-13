@@ -61,9 +61,9 @@ class UI {
     divMessage.classList.add("text-center", "alert");
 
     if (guy === "error") {
-      divMessage.classList.add("alert-success");
-    } else {
       divMessage.classList.add("alert-danger");
+    } else {
+      divMessage.classList.add("alert-success");
     }
 
     //? Mensaje de error
@@ -201,7 +201,7 @@ function addExpense(e) {
   budget.newGasto(gasto);
 
   //? Mensaje de todo bien!
-  ui.printAlert("Gasto Agregado Correctamente", "correcto");
+  ui.printAlert("Gasto Agregado Correctamente", "alert-success");
 
   //? Imprimir los gastos
   const { gastos, remaining } = budget; //? destructuring
